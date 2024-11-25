@@ -128,7 +128,7 @@ const Contact = () => {
   return (
     <Container id="Education">
       <Wrapper>
-        <Title>Contact</Title>
+        <Title>Let's Work Together</Title>
         <Desc
           style={{
             marginBottom: "40px",

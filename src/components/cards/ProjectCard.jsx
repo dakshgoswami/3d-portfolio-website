@@ -106,8 +106,8 @@ const ProjectCard = ({ project }) => {
         <Description>{project.description}</Description>
       </Details>
       <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
+        {project.member?.map((member, index) => (
+          <Avatar src={member.img} key={index}/>
         ))}
       </Members>
       <Button href={project.github} target="_blank">

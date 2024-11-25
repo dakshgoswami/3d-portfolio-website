@@ -126,13 +126,13 @@ const Skills = () => {
           }}
         >
           Here are some of my skills on which I have been working on for the
-          past 3 years.
+          past 2 years.
         </Desc>
 
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Tilt>
-              <Skill key={`skill-${index}`}>
+            <Tilt key={`skill-${index}`}>
+              <Skill>
                 <SkillTitle>{skill.title}</SkillTitle>
                 <SkillList>
                   {skill.skills.map((item, index_x) => (

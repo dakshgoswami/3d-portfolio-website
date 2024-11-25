@@ -120,7 +120,7 @@ const Projects = () => {
             WEB APP"S
           </ToggleButton>
           <Divider />
-          <ToggleButton
+          {/* <ToggleButton
             active={toggle === "android app"}
             onClick={() => setToggle("android app")}
           >
@@ -132,12 +132,12 @@ const Projects = () => {
             onClick={() => setToggle("machine learning")}
           >
             MACHINE LEARNING
-          </ToggleButton>
+          </ToggleButton> */}
         </ToggleButtonGroup>
 
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => <ProjectCard project={project} />)}
+            projects.map((project, index) => <ProjectCard key={index} project={project} />)}
           {projects
             .filter((item) => item.category === toggle)
             .map((project) => (
